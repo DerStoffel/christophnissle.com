@@ -2,7 +2,7 @@
 
 👋 Hi, I’m Chris,
 
-I love building great software with great people.
+I love building great software with great people, as I am very passionate about building inclusive and high performing engineering teams.
 
 ---
 
