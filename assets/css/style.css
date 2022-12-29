@@ -114,11 +114,16 @@ a {
     height:100%;
     top:0; 
     left:0;
-    background:rgba(0,0,0,0.2);
+    background:rgba(0,0,0,0.6);
     opacity: 1;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
+  }
+
+  #head {
+    width: 312px;
+    margin: auto;
   }
 
   #head h1 {
@@ -126,17 +131,15 @@ a {
   }
 
   #head h2 {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 30px;
   }
 
   #head h3 {
-    font-size: 12px;
     line-height: 22px;
   }
 
   #head h4 {
-    font-size: 10px;
     line-height: 20px;
   }
 
