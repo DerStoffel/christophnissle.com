@@ -12,9 +12,17 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <script>
+    function loadbg(){
+      var random = Math.floor(Math.random() * 7);
+      document.body.style.backgroundImage=`url('assets/img/${random}.jpg')`;
+      var colors = ['#808080', '#C04347', '#f15641', '#3990c5', '#236164', '#153e9c', '#1ca2ce', '#236164', '#948676']
+      document.querySelector(':root').style.setProperty('--highlight', colors[random]);
+    }
+  </script>
 </head>
 
-<body>
+<body onload="loadbg()">
   <header id="head">
     <div class="container">
 
