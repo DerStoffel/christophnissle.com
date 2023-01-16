@@ -1,6 +1,6 @@
 👋 Hi, I’m Chris,
 
-I love building great software with great people, as I am very passionate about building environments where high-performing teams can emerge.
+I love building great products with great people, as I am very passionate about building environments where high-performing teams can emerge.
 
 ---
 
