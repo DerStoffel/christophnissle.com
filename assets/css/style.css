@@ -2,6 +2,16 @@
   --highlight: #1e90ff;
 }
 
+#progress {
+  width: 100%;
+}
+
+#bar {
+  width: 1%;
+  height: 5px;
+  background-color: var(--highlight);
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
@@ -64,7 +74,7 @@ a {
 #head h2 span {
   color: #fff;
   border-bottom: 2px solid var(--highlight);
-  padding-bottom: 6px;
+  padding-bottom: 3px;
 }
 
 #head h3 {
@@ -75,12 +85,13 @@ a {
 #head h4 {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.8);
+  line-height: 20px;
 }
 
 #head h4 span {
   color: #fff;
   border-bottom: 2px solid var(--highlight);
-  padding-bottom: 6px;
+  padding-bottom: 0px;
 }
 
 #head .social {
@@ -103,7 +114,7 @@ a {
 }
 
 #head .social a:hover {
-  background: #1758fc;
+  background: var(--highlight);;
 }
 
 @media (max-width: 992px) {

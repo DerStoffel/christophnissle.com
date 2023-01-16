@@ -13,23 +13,51 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <script>
+    function init() {
+      move();
+    }
+
     function loadbg(){
       var random = Math.floor(Math.random() * 7);
       document.body.style.backgroundImage=`url('assets/img/${random}.jpg')`;
       var colors = ['#808080', '#C04347', '#f15641', '#3990c5', '#236164', '#153e9c', '#1ca2ce', '#236164', '#948676']
       document.querySelector(':root').style.setProperty('--highlight', colors[random]);
     }
+
+    var i = 0;
+    function move() {
+      if (i == 0) {
+        loadbg();
+        i = 1;
+        var elem = document.getElementById("bar");
+        var width = 0.5;
+        var id = setInterval(frame, 50);
+        function frame() {
+          if (width >= 100) {
+            clearInterval(id);
+            i = 0;
+            move();
+          } else {
+            width += 0.5;
+            elem.style.width = width + "%";
+          }
+        }
+      }
+    }
   </script>
 </head>
 
-<body onload="loadbg()">
+<body onload="init()">
+  <div id="progress">
+    <div id="bar"></div>
+  </div>
   <header id="head">
     <div class="container">
 
       <h1><a href="index.html">Christoph Nissle</a></h1>
-      <h3>I'm a passionate software engineer from Stuttgart <sup>🇪🇺</sup><sub><a href="https://christophnissle.com/legal.html">(imprint)</a></sub></h3>
-      <h4>Currently working as <span>engineering manager</span></h4>
-      <h2>"I love building <span>great software</span> with <span>great people</span>."</h2>
+      <h3>I'm a passionate team player from Stuttgart <sup>🇪🇺</sup><sub><a href="https://christophnissle.com/legal.html">(imprint)</a></sub></h3>
+      <h4>Currently working as <span>engineering manager</span>.<br/>My tool belt combines: <span>building software</span>, <span>organisational development</span>, <span>coaching agile and leadership</span>.</h4>
+      <h2>"I love building <span>great products</span> with <span>great people</span>."</h2>
 
       <div class="social">
         <a href="https://linkedin.com/in/christoph-ni%C3%9Fle/" class="linkedin"><i class="bi bi-linkedin"></i></a>
